@@ -13,7 +13,9 @@ function Signup() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [valid, setValid] = useState(false);
   const [message, setMessage] = useState({ status: "", message: "" });
-
+function hello(){
+    console.log("Hello world!")
+}
   function submithandler() {}
   return (
     <>
