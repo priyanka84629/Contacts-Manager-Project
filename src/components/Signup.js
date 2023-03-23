@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 function Signup() {
   const navigate = useNavigate();
+  const navigate2=useNavigate()
   const [data, setData] = useState({
     email: "",
     password: "",
