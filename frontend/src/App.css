@@ -1,0 +1,155 @@
+.logo{
+  height: 740px;
+  width: 231px;
+  left: 0px;
+  top: 0px;
+  background: #CEF3FF;
+}
+
+.text_logo{
+  /* height: 61px;
+width: 83px; */
+margin-top:20px;
+margin-left: 50px;
+Font-family: Titillium Web;
+Font-style: SemiBold;
+Font-size: 40px;
+font-weight: 600;
+Align: Left;
+font-family: 'Titillium Web', sans-serif;
+color: #0884FF;
+}
+
+.dashboard{
+  height: 27px;
+  width: 84px;
+margin-left: 72px;
+margin-top: 40px;
+font-family: 'Titillium Web', sans-serif;
+font-size: 18px;
+font-weight: 600;
+line-height: 27px;
+/* Font-style: SemiBold; */
+Align: Left;
+Vertical-align: Center;
+color: #181818;
+}
+.total_contacts{
+  height: 55px;
+width: 160px;
+margin-left: 30px;
+margin-top: 25px;
+border-radius: 6px;
+background: #2DA5FC;
+}
+.text_tc{
+  height: 27px;
+width: 108px;
+margin-left: 30px;
+margin-top: 35px;
+border-radius: nullpx;
+  font-family: Titillium Web;
+font-size: 16px;
+font-weight: 500;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: left;
+color: #FFFFFF;
+vertical-align: center
+}
+.heading{
+  height: 60px;
+width: 1285px;
+margin-left: 231px;
+margin-top: -700px;
+border-radius: 0px;
+border-bottom: 2px solid #EAEAEA;
+}
+
+.contact_text{
+  height: 40px;
+width: 194px;
+margin-left: 24px;
+margin-top: 40px;
+Font-family: Titillium Web;
+Font-style: SemiBold;
+Font-size: 30px;
+Line-height: 49px;
+Line-height: 100%;
+Align: Left;
+Vertical-align: Top;
+Opacity: 80%;
+Blend: Pass through;
+color: #454545
+}
+
+.search{
+  height: 35px;
+width: 380px;
+margin-left: 300px;
+margin-top: -30px;
+border-radius: 6px;
+background: #F2F2F2;
+border: #F2F2F2;
+}
+
+.user_name{
+  height: 24px;
+width: 80px;
+margin-left: 300px;
+margin-top: 27px;
+font-family: Titillium Web;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+Opacity: 90%;
+color: #000000
+
+}
+.post{
+  height: 21px;
+width: 76px;
+margin-left: 1160px;
+margin-top: -6px;
+border-radius: nullpx;
+Font-family: Titillium Web;
+Font-style: Regular;
+Font-size: 14px;
+Line-height: 21px;
+Line-height: 100%;
+Align: Left;
+Vertical-align: Top;
+color: #000000;
+font-weight: 500;
+}
+
+.table{
+  margin-top: 30px;
+  margin-left:300px;
+
+}
+.table-heading{
+background-color: #B2DFFF;
+border-right: 2px solid #7D7D7D;
+border-radius: 20px;
+}
+.checkbox{
+  width: min-content;
+}
+td{
+  width: 130px;
+  height: 40px;
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  Opacity: 60%;
+Blend: Pass through;
+}
+tr{
+
+}
