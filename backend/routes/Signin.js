@@ -27,7 +27,7 @@ router.post('/signin', async (req, res) => {
         }
         else {
             //matching password
-            const matchPass = await bcrypt.compare(password, userValid.password)
+            const matchPass = await bcrypt.compare(pssworad, userValid.password)
             if (!matchPass) {
                 res.status(400).json({
                     status: "failed",
