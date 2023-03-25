@@ -1,5 +1,5 @@
 .logo{
-  height: 740px;
+  height: 100vh;
   width: 231px;
   left: 0px;
   top: 0px;
@@ -34,6 +34,7 @@ Align: Left;
 Vertical-align: Center;
 color: #181818;
 }
+
 .total_contacts{
   height: 55px;
 width: 160px;
@@ -58,12 +59,13 @@ color: #FFFFFF;
 vertical-align: center
 }
 .heading{
-  height: 60px;
+  height: 50px;
 width: 1285px;
 margin-left: 231px;
-margin-top: -700px;
+margin-top: -95vh;
 border-radius: 0px;
 border-bottom: 2px solid #EAEAEA;
+
 }
 
 .contact_text{
@@ -82,6 +84,8 @@ Opacity: 80%;
 Blend: Pass through;
 color: #454545
 }
+
+
 
 .search{
   height: 35px;
@@ -126,14 +130,18 @@ font-weight: 500;
 }
 
 .table{
-  margin-top: 30px;
-  margin-left:300px;
+  margin-top: 15px;
+  margin-left:280px;
 
 }
 .table-heading{
 background-color: #B2DFFF;
-border-right: 2px solid #7D7D7D;
-border-radius: 20px;
+
+border-radius: 10px;
+corner-radius: 10px;
+box-shadow: 1px 1px 20px 0px #FE86271A inset;
+box-shadow: -1px -1px 20px 0px #FE86271A inset;
+
 }
 .checkbox{
   width: min-content;
@@ -153,3 +161,88 @@ Blend: Pass through;
 tr{
 
 }
+.date{
+  height: 40px;
+  width: 120px;
+  margin-left: 280px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  border: none;
+  box-shadow: 1px 1px 20px 0px #0000001A;
+  font-family: Titillium Web;
+font-size: 13px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.filter{
+  height: 40px;
+  width: 120px;
+  margin-left: 25px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  border: none;
+  box-shadow: 1px 1px 20px 0px #0000001A;
+}
+.delete{
+  height: 40px;
+  width: 120px;
+  margin-left: 25px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  border: none;
+  box-shadow: 1px 1px 20px 0px #0000001A;
+}
+.import{
+  height: 40px;
+  width: 120px;
+  margin-left: 25px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  border: none;
+  box-shadow: 1px 1px 20px 0px #0000001A;
+}
+.export{
+  height: 40px;
+  width: 120px;
+  margin-left: 25px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  border: none;
+  box-shadow: 1px 1px 20px 0px #0000001A;
+}
+.logout{
+ margin-top: 430px;
+ margin-left: 40px;
+  Font-family: Titillium Web;
+  Font-style: Regular;
+  Font-size: 15px;
+  Line-height: 27px;
+  Line-height: 100%;
+  Align: Left;
+  font-weight: 100;
+  Vertical-align: Top;
+background-color: #CEF3FF;
+border: none;
+opacity: 90%;
+}
+.pageNumber{
+  margin-left: 85vw;
+  margin-top: 5vh;
+  list-style: none;
+  display: flex;
+}
+.pageNumber li{
+  cursor: pointer;
+  margin-left: 0.5vw;
+  /* color: #2DA5FC; */
+}
+
