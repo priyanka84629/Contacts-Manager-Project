@@ -1,0 +1,83 @@
+body {
+    background-color: #ccf7ee;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#main-container {
+    text-align: center;
+    background-color: white;
+    width: 28%;
+    height: 30rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    border-radius: .7rem;
+}
+
+#heading {
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    letter-spacing: 0.016rem;
+    color: #4C57B6;
+    font-weight: 400;
+}
+
+#heading-2 {
+    letter-spacing: 0.016rem;
+    font-weight: 400;
+    color: #000000;
+    padding-top: .1rem;
+    padding-bottom: 2rem;
+}
+
+.Signin-input {
+    width: 70%;
+    margin-bottom: 1.5rem;
+    padding: .6rem;
+    border-radius: .3rem;
+    border: .1rem solid #E2E2E2;
+
+}
+
+#button-signin {
+    width: 74%;
+    margin-top: 1rem;
+    background-color: #4C57B6;
+    color: white;
+    border: .1rem solid #4C57B6;
+    border-radius: .5rem;
+    font-weight: 600;
+    font-size: .8rem;
+    padding: .7rem;
+}
+
+#Signup a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: .8rem;
+    color: #4C57B6;
+}
+
+#noaccount {
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+#noaccount a {
+    text-decoration: none;
+
+}
+
+#error-message {
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-top: 1rem;
+    display: inline-block;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    color: red;
+}
