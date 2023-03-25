@@ -1,4 +1,5 @@
 import React from "react";
+import axios from 'axios'
 import { useNavigate } from "react-router";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -13,10 +14,22 @@ function Signup() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [valid, setValid] = useState(false);
   const [message, setMessage] = useState({ status: "", message: "" });
-function hello(){
-    console.log("Hello world!")
-}
-  function submithandler() {}
+
+  const submithandler= async (e)=>{
+    e.preventDefault()
+    if(confirmPassword==data.password){
+        axios.post('',data)
+        .then(result=>{
+            navigate('/')
+        }).catch((e)=>{
+            setMessage(e)
+            setValid(true)
+        })
+    }else{
+        setMessage({status:'',message:"Password and Confirm Passwords did not match!"})
+    setValid(true)
+    }
+  }
   return (
     <>
       <center>
@@ -67,9 +80,24 @@ function hello(){
               </div>
             </div>
           </section>
+          <Validation trigger={valid}>
+                <div className='card-message'>
+                    <h3>{message.status}</h3>
+                    <p>{message.message}</p>
+                    <button onClick={()=>setValid(false)}>ok</button> 
+                </div>
+                
+            </Validation>
         </main>
       </center>
     </>
   );
 }
 export default Signup;
+const Validation=(props)=>{
+    return(props.trigger)?(
+        <div className='popupCard'>
+            {props.children}
+        </div>
+    ):""
+}
