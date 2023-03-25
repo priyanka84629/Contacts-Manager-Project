@@ -1,5 +1,29 @@
-import React from "react"
+import React,{useState} from "react"
 const Table = ({data})=>{
+    //------------------pagination-------------------
+const [currentPage,setcurrentPage] = useState(1)
+const[itemPerPage,setitemPerPage] = useState(5)
+
+const handleClick = (event)=>{
+setcurrentPage(Number(event.target.id))
+}
+const pages =[];
+for(let i=1;i<=Math.ceil(data.length/itemPerPage);i++){
+    pages.push(i);
+}
+const indexOFLastItem = currentPage*itemPerPage;
+const indexOFFirstItem = indexOFLastItem - itemPerPage;
+const currentItems = data.slice(indexOFFirstItem,indexOFLastItem)
+
+
+const renderPageNumber = pages.map(number=>{
+    return (
+        <li key={number} id={number} onClick={handleClick}>
+            {number} 
+        </li>
+    )
+})
+//--------------------------------------------
     return(
         <div>
         <table className="table">
@@ -15,7 +39,7 @@ const Table = ({data})=>{
                         <td>Action</td>
                     </tr>
                 {
-                    data.map((item)=>
+                    currentItems.map((item)=>
                     <tr className="table-data">
                         <td className="checkbox"><input type="checkbox" /></td>
                         <td>{item.name}</td>
@@ -34,6 +58,7 @@ const Table = ({data})=>{
                     )
                 }
                 </table>
+                <ul className="pageNumber">{renderPageNumber}</ul>
                 </div>
     )
 }

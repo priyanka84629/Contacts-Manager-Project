@@ -9,23 +9,6 @@ function Contactpage() {
   const [data, setdata] = useState([]);
   const [query, setQuery] = useState("");
 
-//------------------pagination-------------------
-const [currentPage,setcurrentPage] = useState(1)
-const[itemPerPage,setitemPerPage] = useState(5)
-
-const pages =[];
-for(let i=1;i<=Math.ceil(data.length/itemPerPage);i++){
-    pages.push(i);
-}
-const indexOFLastItem = currentPage*itemPerPage;
-
-const renderPageNumber = pages.map(number=>{
-    return (
-        <li key={number} id={number}>
-            {number}
-        </li>
-    )
-})
 //--------------------------------------------------------------------
   const search = (data) => {
     console.log(data.filter((item) => item.email.includes(query.trim())));
@@ -126,8 +109,7 @@ const renderPageNumber = pages.map(number=>{
               </button>
             </CSVLink>
           </span>
-          <Table data={search(data)} />
-          <ul className="pageNumber">{renderPageNumber}</ul>
+          <Table data={search(data)} />        
         </div>
       </div>
     </div>
