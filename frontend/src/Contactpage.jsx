@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Table from "./Table";
 import { CSVLink } from "react-csv";
-// import Pagination from "./Pagination";
-// import Pagination from "./Pagination";
 
 
 function Contactpage() {

@@ -23,6 +23,7 @@ const renderPageNumber = pages.map(number=>{
         </li>
     )
 })
+
 //--------------------------------------------
     return(
         <div>
@@ -51,7 +52,7 @@ const renderPageNumber = pages.map(number=>{
                         <td>...</td>
                         <td>
                             <button><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                            <button><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                            <button onClick={()=>deleteUser(item.id)}><i class="fa fa-trash-o" aria-hidden="true"></i></button>
                         </td>
                     </tr>
                     
